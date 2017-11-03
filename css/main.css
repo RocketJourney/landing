@@ -6,6 +6,7 @@ body {
   font-family: "Montserrat";
   background-color: #242424;
   font-weight: 100;
+  color:#eaeaea;
 }
 
 /* Utilities */
@@ -82,7 +83,6 @@ body {
 
 .rj-jumbo-main {
   font-family: "Montserrat";
-  background-image: linear-gradient(-142deg, #FFF300 0%, #FFCC00 100%);
   background: url("../img/bg-pattern.svg") no-repeat left center;
   padding-bottom: 0px;
   padding-top: 20px;
@@ -143,7 +143,28 @@ body {
   margin: 80px auto 70px;
 }
 
+/* Validation */
+
+.validation-logos {
+	text-align: center;
+	line-height: 70px;
+  color:#4a4a4a;
+}
+
+.ihrsa-member {
+  border-left: 1px solid #2a2a2a;
+  line-height: 70px;
+  padding:0 30px;
+}
+
+.validation-logos .img-responsive, .ihrsa-member .img-responsive{
+	vertical-align: middle;
+	display: inline-block;
+  padding:0 4px;
+}
+
 /* Testimonials */
+
 .rj-testimonials {
   background-color: #1a1a1a;
   padding:30px;
@@ -240,7 +261,8 @@ body {
 /* Call to Action */
 
 #rj-cta {
-  background-image: linear-gradient(-142deg, #FFF300 0%, #FFCC00 100%);
+  background: url("../img/bg-pattern.svg") no-repeat left center;
+  color:#eaeaea;
   text-align: center;
   padding:30px;
 }
