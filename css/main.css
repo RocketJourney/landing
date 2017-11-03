@@ -101,7 +101,7 @@ body {
 
 .rj-jumbo-main p {
   font-family: "Montserrat";
-  font-size: 18px;
+  font-size: 20px;
   color: #A1A1A1;
   margin-bottom: 30px;
 }
@@ -113,13 +113,25 @@ body {
   line-height: 20px;
 }
 
-.nav-btn {
+.rj-nav-btn {
   color:#eaeaea;
   border: #979797 1px solid;
   border-radius: 50px;
   line-height: 15px!important;
   font-weight: bold;
   font-size: 15px;
+}
+
+.rj-nav-btn:hover, .rj-nav-btn:focus {
+  background-color: #ffcc00!important;
+  border-color: #ffcc00;
+  color:#1a1a1a;
+}
+
+.rj-nav-btn:active {
+  background-color: #B79717!important;
+  border-color: #B79717;
+  color:#1a1a1a;
 }
 
 .rj-jumbo-phone {
