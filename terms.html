@@ -1,0 +1,403 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>RocketJourney</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="<%= Atena.Endpoint.static_path("/landing/css/bootstrap.min.css") %>">
+  <link rel="stylesheet" href="<%= Atena.Endpoint.static_path("/landing/css/main.css") %>">
+  <link rel="stylesheet" href="<%= Atena.Endpoint.static_path("/landing/css/terms.css") %>">
+
+  <script src="<%= Atena.Endpoint.static_path("/landing/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js") %>"></script>
+</head>
+<body class="with-fixed-navbar">
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header>
+    <nav class="navbar navbar-rj navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">
+            <img src="<%= Atena.Endpoint.static_path("/landing/img/rj-logo-nav.png") %>"
+            srcset="<%= Atena.Endpoint.static_path("/landing/img/rj-logo-nav.png") %> 1x,
+            <%= Atena.Endpoint.static_path("/landing/img/rj-logo-nav@2x.png") %> 2x" alt="" />
+          </a>
+        </div>
+        <div class="navbar-right">
+          <p class="navbar-text rj-navbar-phone">CONTÁCTANOS AL <span class="rj-navbar-phone-number"><span class="rj-demph">+52 1</span> 045 (644) 173 0535</span></p>
+          <button class="btn rj-btn-primary rj-btn-navbar" role="button" data-toggle="modal" data-target="#contact-form">Solicitar Información</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="jumbotron rj-jumbo-terms">
+    <div class="container">
+      <div class="row">
+
+          <h1>Términos y Condiciones</h1>
+
+      </div>
+    </div>
+  </div>
+
+  <section id="terms">
+    <div class="container">
+      <div class="row">
+
+            <!-- Empiezan Terms -->
+
+            <div class="gym-terms-content">
+              <h2>En Resumen</h2>
+                <div class="row gym-terms-summary">
+                  <div class="col-md-6">
+                    <div class="media">
+                      <div class="media-left">
+                          <img class="media-object"
+                               src="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-gift.png") %>"
+                               srcset="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-gift.png") %> 1x,
+                               <%= Atena.Endpoint.static_path("/landing/img/terms/terms-gift@2x.png") %> 2x"
+                               alt="Siempre sera gratis la versión basica del juego sin limite de usuarios"
+                               >
+
+                      </div>
+                      <div class="media-body">
+                        La versión básica siempre será gratis, sin límite de usuarios.
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <div class="media-left">
+                          <img class="media-object"
+                          src="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-comply.png") %>"
+                          srcset="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-comply.png") %> 1x,
+                          <%= Atena.Endpoint.static_path("/landing/img/terms/terms-comply@2x.png") %> 2x"
+                               alt="Cumple con la Ley Federal de Protección de Datos Personales y solo se solicitan los datos minimos necesarios."
+                               >
+
+                      </div>
+                      <div class="media-body">
+                        Cumple con la Ley Federal de Protección de Datos Personales.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="media">
+                      <div class="media-left">
+                          <img class="media-object"
+                          src="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-noresell.png") %>"
+                          srcset="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-noresell.png") %> 1x,
+                          <%= Atena.Endpoint.static_path("/landing/img/terms/terms-noresell@2x.png") %> 2x"
+                               alt="No puedes cobrarle a tus clientes por el uso de la App"
+                               >
+
+                      </div>
+                      <div class="media-body">
+                        No puedes cobrarle a tus clientes por el uso de la aplicación.
+                      </div>
+                    </div>
+                    <div class="cc-terms-space"></div>
+                    <div class="media">
+                      <div class="media-left">
+                          <img class="media-object"
+                          src="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-nostore.png") %>"
+                          srcset="<%= Atena.Endpoint.static_path("/landing/img/terms/terms-nostore.png") %> 1x,
+                          <%= Atena.Endpoint.static_path("/landing/img/terms/terms-nostore@2x.png") %> 2x"
+                               alt="No guardaremos la info. de asistencia de los IDs no registrados en RocketJourney, a menos que tu lo solicites."
+                               >
+
+                      </div>
+                      <div class="media-body">
+                         Requiere acceso limitado a los datos mínimos necesarios: ID, Fecha y Lugar.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <hr>
+              <div class="gym-terms-intro">
+                Este acuerdo establece los Términos y Condiciones legales para el uso del sitio web: www.rocketjourney.com y/o la aplicación móvil (en lo sucesivo la “plataforma rocketjourney”) y para el uso de los servicios propiedad de y operados por Tres Astronautas, S.A.P.I de CV (en adelante “Tres Astronautas” o la “Sociedad”, conjuntamente con la Plataforma Rocketjourney, en lo sucesivo los “Servicios RocketJourney”). al acceder y/o usar la Plataforma Rocketjourney o los servicios rocketjourney de cualquier forma, incluida, pero no limitada, la visita al o la navegación en la plataforma rocketjourney, usted está aceptando someterse y/o sujetarse a todo lo previsto en los presentes términos y condiciones. estos términos y condiciones de uso son aplicables a cualquier usuario de la plataforma rocketjourney o de los servicios rocketjourney.
+              </div>
+
+              <hr>
+
+              <h3>Aceptación de los Términos y Condiciones</h3>
+
+              <p>
+                Los Servicios RocketJourney son ofrecidos sujeto a la aceptación, sin modificación y/o limitación, de todos y cada uno de los términos y condiciones aquí previstos (en lo sucesivo los “Términos de Uso”), por parte del usuario centro deportivo o gimnasio (en lo sucesivo el “Usuario Gimnasio”) los que incluyen la Política de Privacidad, disponible en www.rocketjourney.com y todas las reglas de operación, políticas, prácticas y procedimientos que puedan ser divulgados o publicados ocasionalmente a través  de la Plataforma RocketJourney por la Sociedad, cada una de las cuales es incorporada a los Términos de Uso por referencia, y cada una de las cuales puede ser actualizada por Tres Astronautas, a su sola discreción y en cualquier momento sin aviso previo. Por lo tanto, el acceso y uso de la Plataforma RocketJourney y/o los Servicios RocketJourney está condicionada a la aceptación y cumplimiento de estos Términos de Uso. Sin perjuicio de lo anterior, algunos servicios ofrecidos por la Plataforma RocketJourney pueden quedar sujetos a términos y condiciones adicionales y/o particulares que, en cualquier momento, determine y divulgue la Sociedad; el uso de dichos servicios estará sujeto a dichos términos y/o condiciones adicionales, que son incorporados a estos Términos de Uso por virtud de esta referencia.
+              </p>
+
+              <h3>Los Servicios RocketJourney para Usuarios Gimnasios</h3>
+
+              <p>
+                Tres Astronautas pone a disposición del Usuario Gimnasio y sus clientes, los siguientes Servicios RocketJourney: (i) soporte técnico al Usuario Gimnasio para su integración a la Plataforma RocketJourney; (ii) incorporación del logo y nombre del Usuario Gimnasio a la lista de gimnasios afiliados a la Plataforma RocketJourney; (iii) habilitación a los clientes del Usuario Gimnasio (los “Clientes Gimnasio”) de avanzar automáticamente en el juego por sus asistencias a las instalaciones deportivas del Usuario Gimnasio; lo anterior en el entendido de que cualquier Cliente Gimnasio podrá descargar y/o conectarse a la Plataforma RocketJourney y conectarse al control de acceso del Usuario Gimnasio de manera gratuita, y (iv) incorporación del logo y nombre del Usuario Gimnasio en las actividades de tipo “Check-In” de los Clientes Gimnasio conectados al control de acceso del Usuario Gimnasio a través de la Plataforma RocketJourney; lo anterior en el entendido de que esas actividades pueden ser vistas por sus equipos y/o en redes sociales.
+              </p>
+
+              <p>
+                El Usuario Gimnasio acuerda proporcionar a Tres Astronautas la siguiente información referente a las asistencias de los Clientes Gimnasio a sus instalaciones deportivas: (i) el ID del respectivo Cliente Gimnasio; (ii) lugar de asistencia (identificación de la instalación de que se trata), y (iii) fecha y hora de asistencia (ingreso a la instalación); lo anterior en el entendido de que dicha información será utilizada por Tres Astronautas únicamente con el fin de permitirle a los Clientes Gimnasio, conectados al Usuario Gimnasio a través de la Plataforma RocketJourney, avanzar automáticamente en el juego desarrollado en la Plataforma RocketJourney.
+              </p>
+
+              <p>
+                Siempre que se encuentre en cumplimiento de los presentes Términos de Uso, el Usuario Gimnasio recibirá los Servicios RocketJourney, sin el pago de contraprestación monetaria alguna.
+              </p>
+
+              <p>
+                El número de Clientes Gimnasio que podrán conectarse al Usuario Gimnasio, a través de la Plataforma RocketJourney, será ilimitado; lo anterior en el entendido de que los Clientes Gimnasio tendrán derecho al uso de la Plataforma RocketJourney, de acuerdo con lo previsto en los Términos de Uso.
+              </p>
+
+              <h3>La Plataforma RocketJourney y los Clientes Gimnasios</h3>
+
+              <p>
+                La Plataforma RocketJourney sólo está disponible para Clientes Gimnasios mayores de 18 (dieciocho) años de edad en el territorio de los Estados Unidos Mexicanos, de conformidad con la legislación aplicable en cada caso. El Cliente Gimnasio declara y garantiza que es una persona con la edad y capacidad legal para celebrar un contrato vinculante para las partes, obligándose de conformidad con los Términos de Uso, y que toda la información de registro presentada por el mismo, para efectos de acceder a la Plataforma RocketJourney, es precisa y veraz. Consecuentemente, el Cliente Gimnasio puede usar los servicios de la Plataforma RocketJourney únicamente si cuenta con la capacidad legal de celebrar un contrato obligatorio o vinculante con Tres Astronautas y en caso de que no sea una persona que tenga prohibido recibir los servicios en términos de las leyes aplicables El Cliente Gimnasio puede usar los servicios de la Plataforma RocketJourney únicamente cumpliendo con los Términos de Uso y con todas las disposiciones aplicables.
+              </p>
+
+              <h3>Autorización de Tres Astronautas</h3>
+
+              <p>
+                Tres Astronautas, por virtud del presente, le otorga permiso al Usuario Gimnasio para acceder y usar los Servicios RocketJourney de acuerdo con estos Términos de Uso, siempre que: (i) acuerde y/o se obligue a no distribuir o compartir, por cualquier medio, cualesquiera parte de los Servicios RocketJourney, sin la previa autorización por escrito de la Sociedad, a menos que Tres Astronautas haga disponibles los medios para y permita tal distribución a través de funcionalidades ofrecidas en la Plataforma; (ii) acuerde y/o se obligue a no alterar o modificar cualquier parte o la totalidad de los Servicios RocketJourney; (iii) acuerde y/o se obligue a no utilizar los Servicios para efectos de cualquiera de los siguientes usos comerciales a menos que usted obtenga la autorización previa por escrito de Tres Astronautas: (a) la venta del acceso a los Servicios RocketJourney; o (b) la venta de publicidad, patrocinios, o promociones colocadas en o dentro de los Servicios RocketJourney.
+              </p>
+
+              <h3>Modificación de Términos de Uso</h3>
+
+              <p>
+                La Sociedad se reserva el derecho, a sola su discreción y en cualquier momento, a modificar, suprimir o remplazar cualquier Término de Uso, o cambiar, suspender o descontinuar los Servicios RocketJourney (incluyendo, sin limitación, la disponibilidad de algún elemento, base de datos o contenido), publicando una nota en la Plataforma RocketJourney y/o enviando un correo electrónico a los interesados. Los Servicios RocketJourney que Tres Astronautas proporciona a través de la Plataforma RocketJourney están siempre evolucionando y la forma y naturaleza de los Servicios RocketJourney proporcionados por la Sociedad pueden cambiar en el transcurso del tiempo sin previo aviso a usted. Tres Astronautas está facultado para, a su sola discreción y en cualquier momento, fijar límites a ciertos elementos y/o servicios y/o para restringir (permanente o temporalmente)  el acceso a partes o a la totalidad de los Servicios RocketJourney, sin incurrir en responsabilidad alguna frente al Usuario Gimnasio y/o Cliente Gimnasio y/o sin que se requiera notificación alguna al respecto. Es responsabilidad del Usuario Gimnasio revisar periódicamente los Términos de Uso, a efectos de mantenerse actualizado respecto del contenido y alcance de ellos. En todo caso, el solo uso de los Servicios RocketJourney, con posterioridad a la divulgación y/o publicación de cualquier cambio a los Términos de Uso, constituye manifestación indubitable de la aceptación irrevocable e incondicional de dichos cambios y, consecuentemente, de la totalidad de los Términos de Uso que se encuentren vigentes.
+              </p>
+
+              <h3>Reglas y Conducta</h3>
+
+              <p>
+                Como condición de uso, el Usuario Gimnasio se compromete a no usar los Servicios RocketJourney para ningún propósito prohibido o distinto de los previsto en los Términos de Uso. Los Servicios RocketJourney, sólo son ofrecidos para el uso del Usuario Gimnasio y de los Clientes Gimnasios no con fines comerciales (excepto como se permite en los términos fijados en estos Términos de Uso). El Usuario Gimnasio es responsable de toda la actividad relacionada con los Servicios RocketJourney.
+              </p>
+
+              <p>
+                El Usuario Gimnasio no debe: (i) tomar ninguna acción que imponga o pueda imponer (según lo que la Sociedad determine a su propia discreción) una carga irracional o desproporcionada en la infraestructura de la Sociedad (o de sus terceros proveedores); (ii) acceder, alterar, o utilizar áreas no públicas de los Servicios RocketJourney, sistemas computacionales de la Sociedad, o los sistemas tecnológicos para el acceso de los proveedores de Tres Astronautas; (iii) interferir o intentar interferir con el funcionamiento adecuado de los Servicios RocketJourney o con cualquier actividad realizada por los Servicios RocketJourney o la Sociedad; (iv) probar, escanear, o examinar la vulnerabilidad de cualquier sistema o red o violar o circunvenir cualquier medida de seguridad o autenticación de los Servicios RocketJourney; (v) acceder o buscar o intentar acceder o buscar los Servicios RocketJourney por cualquier medio (automatizado o de algún otro tipo) distinto al sistema actualmente proporcionado por la Sociedad (y únicamente de conformidad con estos Términos de Uso); (vi) eludir cualquier medida que la Sociedad pueda usar para prevenir o restringir el acceso a los Servicios RocketJourney (u otras cuentas, sistemas computacionales o redes conectadas al Servicios); (vii) falsificar cualquier TCP/IP packet header o cualquier parte del encabezado o header de información en cualquier correo electrónico o posting, o de cualquier otra forma usar los Servicios para enviar información identificando fuente alterada, engañosa o falsa; (viii) usar Maillist, Listserv, cualquier forma de respuesta automática o ‘spam’ en los Servicios RocketJourney; (ix) usar software, aparatos u otros procesos manuales o automatizados para “arrastrar”, “incorporar”, “sobreponer” o “trepar” contenido indebido a la Plataforma RocketJourney, o (x) interferir con, o interrumpir, (o intentar hacerlos), el acceso a cualquier Usuario Gimnasio, host o red, incluyendo, sin limitación, enviar virus, sobrecargas, inundaciones (flooding), bombardeos de correos (mail-bombing) a los Servicios RocketJourney.
+              </p>
+
+              <p>
+                Por otro lado, el Usuario Gimnasio no debe, directa o indirectamente: (i) descifrar, descompilar, desarmar o intentar derivar cualquier código fuente o ideas subyacentes o algoritmos de cualquier parte de los Servicios RocketJourney; (ii) modificar, traducir o crear obras derivadas de cualquier parte de los Servicios RocketJourney, o (iii) copiar, rentar, distribuir o transferir cualquiera de los derechos que el Usuario Gimnasio recibe a través de este documento.
+              </p>
+
+
+
+              <h3>Propiedad Intelectual</h3>
+
+              <p>
+                El Usuario Gimnasio reconoce y está de acuerdo que Tres Astronautas (directamente o a través de sus afiliadas, incluyendo RocketJourney, Inc.) es el titular y poseedor exclusivo o licenciatario de los derechos de propiedad intelectual relacionados con sus actividades y con su plataforma tecnológica, incluyendo la Plataforma RocketJourney (la “Propiedad Intelectual RocketJourney”). El término Propiedad Intelectual RocketJourney incluye también todo material, invento, know-how, marca, información, datos, escritos, derechos y demás propiedad en cualquiera forma que sea proporcionada al Usuario Gimnasio por Tres Astronautas o de parte de Tres Astronautas, para efectos de proporcionar los Servicios RocketJourney.
+              </p>
+
+              <p>
+                Nada de lo establecido en los presentes Términos de Uso será interpretado en el sentido de que Tres Astronautas otorga al Usuario Gimnasio titularidad, derecho o interés alguno sobre la Propiedad Intelectual RocketJourney. El uso de la Propiedad Intelectual RocketJourney por parte del Usuario Gimnasio se limitará exclusivamente a lo previsto en los presentes Términos de Uso.
+              </p>
+
+              <h3>Privacidad de Datos Personales</h3>
+
+              <p>
+                Para efectos de lo dispuesto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (la “LFPDP”) y las disposiciones que de ella emanen, Tres Astronautas y el Usuario Gimnasio reconocen y aceptan expresamente que la forma y términos en que cualesquiera información o datos que se consideren datos personales que se encuentren en poder de cada una de ellas en términos de la LFPDP, y que se entregue recíprocamente serán protegidos y tratados de conformidad con lo que se establece y regula el Aviso de Privacidad, incluido en la Plataforma RocketJourney (el “Aviso de Privacidad”).
+              </p>
+
+              <p>
+                En todo caso, los datos personales de carácter personal entregados recíprocamente por Tres Astronautas y el Usuario Gimnasio, serán los estrictamente necesarios para efectos de estos Términos de Uso y de lo establecido en el Aviso de Privacidad, y única y exclusivamente podrán ser aplicados o utilizados para el cumplimiento de los fines objeto de estos Términos de Uso y del Aviso de Privacidad, así como de conformidad con cualquier disposición de la LFPDP o de la demás legislación aplicable.
+              </p>
+
+              <p>
+                En términos del Aviso de Privacidad, Tres Astronautas y el Usuario Gimnasio adoptarán las medidas de índole técnico y organizativas necesarias para garantizar la seguridad de los datos personales entregados entre ellas y evitarán su alteración, pérdida, tratamiento o acceso no autorizado.
+              </p>
+
+              <p>
+                Tres Astronautas y el Usuario Gimnasio se comprometen y obligan a tratar los datos de carácter personal que la otra parte le entregue o dé acceso, de conformidad con lo establecido en la LFPDP, y de acuerdo a las instrucciones de la legislación aplicable,  para la prestación de los Servicios RocketJourney, configurándose por tanto como encargados de tratamiento.
+              </p>
+
+              <h3>La Terminación</h3>
+
+              <p>
+                La Sociedad puede interrumpir el acceso a todo o parte de los Servicios RocketJourney en cualquier momento, con o sin causa, con o sin notificación, de forma efectivamente inmediata y a su entera discreción, lo que puede dar como resultado la pérdida y destrucción de toda la información asociada con el Usuario Gimnasio. Si el Usuario Gimnasio decide cancelar su cuenta, puede hacerlo siguiendo las instrucciones de la Plataforma RocketJourney. Todas las provisiones de los Términos de Uso que por su naturaleza deban sobrevivir después de la terminación, sobrevivirán la terminación y seguirán en vigor, incluyendo, pero no limitado a, las disposiciones de propiedad, renuncia a las garantías, indemnizaciones y limitaciones de responsabilidad.
+              </p>
+
+              <h3>Entrega Electrónica/Política de Notificación y Su Consentimiento.</h3>
+
+              <p>
+                Al usar los Servicios RocketJourney, el Usuario Gimnasio acepta recibir por parte de Tres Astronautas toda la comunicación, incluyendo notificaciones, acuerdos, comunicados requeridos legalmente o cualquier otra información y/o material publicitario relacionado con los Servicios RocketJourney (en conjunto, “Notificaciones”) de forma electrónica. La Sociedad puede poner a disposición del Usuario tales Notificaciones publicándolas en la Plataforma RocketJourney. Si el Usuario Gimnasio desea retirar su consentimiento para recibir Notificaciones de forma electrónica debe interrumpir el uso de la Plataforma RocketJourney y de los Servicios RocketJourney.
+              </p>
+
+              <h3>Ley Vigente</h3>
+
+              <p>
+                Estos Términos de Uso (y cualquier regla, política o lineamiento posteriormente incorporado por referencia a los Términos de Uso) serán interpretados y se sujetarán a las leyes aplicables de los Estados Unidos Mexicanos (“México”).
+              </p>
+
+              <h3>Jurisdicción</h3>
+
+              <p>
+                El Usuario Gimnasio acuerda que: (i) la Plataforma RocketJourney y/o los Servicios RocketJourney deben ser considerados exclusivamente ubicados y/o prestados en la Ciudad de México, México; y (ii) la Plataforma RocketJourney y/o los Servicios RocketJourney serán considerados un sitio web pasivo que no da lugar a jurisdicción personal sobre Tres Astronautas o sus respectivos accionistas, creadores, subsidiarias, afiliados, causahabientes, cesionarios, empleados, agentes, directores, funcionarios o accionistas, ya sea específico o general, en jurisdicción distinta a la de la Ciudad de México, México. Por lo anterior, el Usuario Gimnasio acepta que cualquier acción legal que surja de o en relación a estos Términos de Uso o al uso o no uso de los Servicios RocketJourney o al acceso y uso o no uso de la Plataforma RocketJourney, deberá ser interpuesta y resuelta en tribunales federales ubicados en la Ciudad de México, y el Usuario permite y se somete a la jurisdicción personal de dichos tribunales con el fin de litigar cualquier acción. El Usuario Gimnasio renuncia irrevocablemente a todos los derechos que tenga para llevar un juicio en alguna otra jurisdicción o ante alguna otra autoridad, jurisdiccional o no.
+              </p>
+
+              <h3>Integración y Divisibilidad.</h3>
+
+              <p>
+                Los Términos de Uso son el acuerdo íntegro entre el Usuario Gimnasio y Tres Astronautas con respecto al Servicio RocketJourney y acceso y uso de la Plataforma RocketJourney, y reemplazan todas las comunicaciones y propuestas previas o contemporáneas, ya sean orales, escritas o electrónicas, entre el Usuario Gimnasio y la Sociedad con respecto a la Plataforma RocketJourney y/o a los Servicios RocketJourney.
+              </p>
+
+              <p>
+                En el supuesto de que alguna disposición de estos Términos de Uso resulte ser inaplicable, ilegal o inválida, en la medida en que fuere permitido por las leyes aplicables, tal disposición se considerará como no puesta, limitada o eliminada, en la medida mínima necesaria para que los Términos de Uso permanezcan en plena vigencia y efecto y sean ejecutables y vinculantes. La demora u omisión en el ejercicio de cualquier derecho o recurso previsto bajo estos Términos de Uso o en las leyes aplicables, en ningún caso se interpretará como una renuncia a los mismos. Igualmente, el ejercicio singular o parcial de cualquier derecho o recurso derivado de estos Términos de Uso no se interpretará como una renuncia al ejercicio simultáneo o futuro de dicho o cualquier otro derecho o recurso.
+              </p>
+
+              <p>
+                No obstante que Tres Astronautas pudiera intentar notificar a los Usuarios cuando se hayan hecho cambios relevantes a estos Términos de Uso, el Usuario deberá periódicamente revisar la versión más actualizada en la Plataforma RocketJourney. Tres Astronautas podrá, a su exclusiva discreción modificar o revisar estos Términos de Uso y demás políticas en cualquier momento, y usted acuerda estar obligado por tales modificaciones o revisiones.
+              </p>
+
+            </div>
+          <!-- Terminan Terms -->
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="container">
+    <div class="row">
+      <ul>
+        <li><span class="rj-copyright">© 2016 RocketJourney, Inc.</span></li>
+        <li><a href="/privacy">Política de Privacidad</a></li>
+        <li><a href="/terms">Términos y Condiciones</a></li>
+        <li class="mixpanel"><a href="http://www.mixpanel.com" target="_blank"><img src="<%= Atena.Endpoint.static_path("/landing/img/mixpanel.png") %>" alt="" /></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Modal Regular -->
+
+  <div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Déjanos tus Datos</h4>
+          <p>Nos comunicaremos contigo lo <br>más pronto posible.</p>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="form-group">
+              <label for="gym">Tu Gimnasio</label>
+              <input type="text" class="form-control" id="gymInput" placeholder="Globo Gym">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu Correo</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="juan@globo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Tu Nombre</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Juan Globo">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn rj-btn-primary" id="rj-send" role="button">Solicitar Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Thinking -->
+
+  <div class="modal" id="contact-form-loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Déjanos tus Datos</h4>
+          <p>Nos comunicaremos contigo lo <br>más pronto posible.</p>
+        </div>
+        <div class="modal-body">
+          <form class="rj-form-loading">
+            <div class="form-group">
+              <label for="gym">Tu Gimnasio</label>
+              <input type="text" class="form-control" id="gymInput" placeholder="Globo Gym" disabled>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu Correo</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="juan@globo.com" disabled>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Tu Nombre</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Juan Globo" disabled>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="rj-form-loading-spinner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Fail -->
+
+  <div class="modal" id="contact-form-fail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title m-fail" id="myModalLabel">Intenta de Nuevo</h4>
+          <p>¡Hubo un error! Intenta de nuevo o contáctanos al <b>045 (644) 173 0535</b></p>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="form-group">
+              <label for="gym">Tu Gimnasio</label>
+              <input type="text" class="form-control" id="gymInput" placeholder="Globo Gym">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu Correo</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="juan@globo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Tu Nombre</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Juan Globo">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn rj-btn-primary" role="button" id="rj-send" data-toggle="modal">Solicitar Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Done -->
+
+  <div class="modal" id="contact-form-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title m-success" id="myModalLabel">¡Listo!</h4>
+          <p>Nos comunicaremos contigo lo <br>más pronto posible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>window.jQuery || document.write('<script src="<%= Atena.Endpoint.static_path("/landing/js/vendor/jquery-1.11.2.min.js") %>"><\/script>')</script>
+  <script src="<%= Atena.Endpoint.static_path("/landing/js/vendor/bootstrap.min.js") %>"></script>
+  <script src="<%= Atena.Endpoint.static_path("/landing/js/main.js") %>"></script>
+</body>
+</html>

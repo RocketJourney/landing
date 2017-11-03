@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>error-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="_componentes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-346.000000, -108.000000)" fill="#FFFFFF">
+            <g id="error-white" transform="translate(346.000000, 108.000000)">
+                <path d="M0,9.00499642 C0,4.03167422 4.03058885,0 9.00499642,0 L14.9950036,0 C19.9683258,0 24,4.03058885 24,9.00499642 L24,14.9950036 C24,19.9683258 19.9694111,24 14.9950036,24 L9.00499642,24 C4.03167422,24 0,19.9694111 0,14.9950036 L0,9.00499642 Z M5,15.8888889 L8.11111111,19 L12.1690821,14.942029 L16.1143317,18.8872786 L18.8872786,16.1143317 L14.942029,12.1690821 L19,8.11111111 L15.8888889,5 L11.8309179,9.05797101 L7.88566828,5.11272142 L5.11272142,7.88566828 L9.05797101,11.8309179 L5,15.8888889 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

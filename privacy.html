@@ -1,0 +1,206 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>RocketJourney</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="<%= Atena.Endpoint.static_path("/landing/css/bootstrap.min.css") %>">
+  <link rel="stylesheet" href="<%= Atena.Endpoint.static_path("/landing/css/main.css") %>">
+  <link rel="stylesheet" href="<%= Atena.Endpoint.static_path("/landing/css/terms.css") %>">
+
+  <script src="<%= Atena.Endpoint.static_path("/landing/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js") %>"></script>
+</head>
+<body class="with-fixed-navbar" style="background-color: #eaeaea;">
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header>
+    <nav class="navbar navbar-rj navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">
+            <img src="<%= Atena.Endpoint.static_path("/landing/img/rj-logo-nav.png") %>"
+            srcset="<%= Atena.Endpoint.static_path("/landing/img/rj-logo-nav.png") %> 1x,
+            <%= Atena.Endpoint.static_path("/landing/img/rj-logo-nav@2x.png") %> 2x" alt="" />
+          </a>
+        </div>
+        <div class="navbar-right">
+          <p class="navbar-text rj-navbar-phone">CONTÁCTANOS AL <span class="rj-navbar-phone-number"><span class="rj-demph">+52 1</span> 045 (644) 173 0535</span></p>
+          <button class="btn rj-btn-primary rj-btn-navbar" role="button" data-toggle="modal" data-target="#contact-form">Solicitar Información</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="jumbotron rj-jumbo-terms">
+    <div class="container">
+      <div class="row">
+
+          <h1>Política de Privacidad</h1>
+
+      </div>
+    </div>
+  </div>
+
+    <section id="policy" class="policy-section section">
+      <div class="container" style="max-width: 840px;">
+
+
+
+        <div class="jumbotron-legal"><a href="https://www.iubenda.com/privacy-policy/359480" class="iubenda-white no-brand iub-body-embed iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></div>
+
+
+      </div>
+    </section>
+
+
+
+  <footer class="container">
+    <div class="row">
+      <ul>
+        <li><span class="rj-copyright">© 2016 RocketJourney, Inc.</span></li>
+        <li><a href="/privacy">Política de Privacidad</a></li>
+        <li><a href="/terms">Términos y Condiciones</a></li>
+        <li class="mixpanel"><a href="http://www.mixpanel.com" target="_blank"><img src="<%= Atena.Endpoint.static_path("/landing/img/mixpanel.png") %>" alt="" /></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Modal Regular -->
+
+  <div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Déjanos tus Datos</h4>
+          <p>Nos comunicaremos contigo lo <br>más pronto posible.</p>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="form-group">
+              <label for="gym">Tu Gimnasio</label>
+              <input type="text" class="form-control" id="gymInput" placeholder="Globo Gym">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu Correo</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="juan@globo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Tu Nombre</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Juan Globo">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn rj-btn-primary" id="rj-send" role="button">Solicitar Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Thinking -->
+
+  <div class="modal" id="contact-form-loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Déjanos tus Datos</h4>
+          <p>Nos comunicaremos contigo lo <br>más pronto posible.</p>
+        </div>
+        <div class="modal-body">
+          <form class="rj-form-loading">
+            <div class="form-group">
+              <label for="gym">Tu Gimnasio</label>
+              <input type="text" class="form-control" id="gymInput" placeholder="Globo Gym" disabled>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu Correo</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="juan@globo.com" disabled>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Tu Nombre</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Juan Globo" disabled>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="rj-form-loading-spinner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Fail -->
+
+  <div class="modal" id="contact-form-fail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title m-fail" id="myModalLabel">Intenta de Nuevo</h4>
+          <p>¡Hubo un error! Intenta de nuevo o contáctanos al <b>045 (644) 173 0535</b></p>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="form-group">
+              <label for="gym">Tu Gimnasio</label>
+              <input type="text" class="form-control" id="gymInput" placeholder="Globo Gym">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu Correo</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="juan@globo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Tu Nombre</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Juan Globo">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn rj-btn-primary" role="button" id="rj-send" data-toggle="modal">Solicitar Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Done -->
+
+  <div class="modal" id="contact-form-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title m-success" id="myModalLabel">¡Listo!</h4>
+          <p>Nos comunicaremos contigo lo <br>más pronto posible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>window.jQuery || document.write('<script src="<%= Atena.Endpoint.static_path("/landing/js/vendor/jquery-1.11.2.min.js") %>"><\/script>')</script>
+  <script src="<%= Atena.Endpoint.static_path("/landing/js/vendor/bootstrap.min.js") %>"></script>
+  <script src="<%= Atena.Endpoint.static_path("/landing/js/main.js") %>"></script>
+
+</body>
+</html>

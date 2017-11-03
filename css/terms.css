@@ -1,0 +1,49 @@
+.rj-jumbo-terms {
+  font-family: "Montserrat";
+  background-image: linear-gradient(-142deg, #FFF300 0%, #FFCC00 100%);
+}
+
+.rj-jumbo-terms h1 {
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+
+.gym-terms-content {
+  padding: 0 14%;
+  color: #afafaf
+}
+
+.gym-terms-content h2 {
+  color: #eaeaea;
+}
+
+.gym-terms-content h3 {
+  color: #eaeaea;
+  margin: 40px 0 20px;
+}
+
+.gym-terms-content p, .gym-terms-intro {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.gym-terms-content hr {
+  border-top: 1px solid #4a4a4a;
+  margin: 30px 0;
+}
+
+.gym-terms-summary {
+  font-size: 16px;
+}
+
+.gym-terms-summary .media {
+  margin: 20px 0;
+  color: #eaeaea
+}
+
+.gym-terms-summary .media-object {
+  margin-right: 10px;
+  vertical-align: middle;
+}

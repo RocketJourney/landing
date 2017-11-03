@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>success</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="_componentes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-114.000000, -109.000000)">
+            <g id="success" transform="translate(114.000000, 109.000000)">
+                <rect id="Rectangle-11" fill="#52C150" x="0" y="0" width="24" height="24" rx="9"></rect>
+                <path d="M18.3554161,10.4449573 L11.5841276,17.216774 C10.7616846,18.0386887 9.45961541,18.0804183 8.68946652,17.3102694 C8.57906792,17.1998708 8.48979829,17.076795 8.41320592,16.9468521 L5.64531832,14.1800209 C4.82287537,13.357578 4.78114576,12.0560369 5.55129465,11.285888 C6.32197176,10.5162674 7.62456929,10.5574688 8.44595577,11.3799117 L10.1330995,13.0670554 L15.5542504,7.64484807 C16.3772216,6.82293331 17.6787626,6.78120371 18.4483833,7.55135263 C19.2190604,8.32044504 19.1768026,9.62357074 18.3554161,10.4449573 L18.3554161,10.4449573 L18.3554161,10.4449573 L18.3554161,10.4449573 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
