@@ -19,32 +19,29 @@ body {
 }
 
 .rj-btn-primary {
-  background-color: #3073C1;
-  color: #eaeaea;
+  background-color: #ffcc00;
+  color: #1a1a1a;
   height: 62px;
   line-height: 62px;
   margin: 4px 0;
-  -webkit-box-shadow: 0 6px 0 #004DA7;
-  -moz-box-shadow: 0 6px 0 #004DA7;
-  box-shadow: 0 6px 0 #004DA7;
-  font-size: 18px;
+  -webkit-box-shadow: 0 6px 0 #B79717;
+  -moz-box-shadow: 0 6px 0 #B79717;
+  box-shadow: 0 6px 0 #B79717;
+  font-size: 22px;
   border-radius: 100px;
   font-weight: bold;
   padding: 0 40px;
 }
 
 .rj-btn-primary:hover, .rj-btn-primary:focus {
-  background-color: #3073C1;
-  color: #eaeaea;
   margin-top: 0px;
   margin-bottom: 8px;
-  -webkit-box-shadow: 0 10px 0 #004DA7;
-  -moz-box-shadow: 0 10px 0 #004DA7;
-  box-shadow: 0 10px 0 #004DA7;
+  -webkit-box-shadow: 0 10px 0 #B79717;
+  -moz-box-shadow: 0 10px 0 #B79717;
+  box-shadow: 0 10px 0 #B79717;
 }
 
 .rj-btn-primary:active {
-  background-color: #3073C1;
   margin-top: 10px;
   margin-bottom: -2px;
   -webkit-box-shadow: none;
@@ -55,29 +52,6 @@ body {
 .rj-btn-primary:active, .rj-btn-primary:focus:active, .rj-btn-primary:focus {
   outline:0;
   border:0;
-}
-
-.rj-btn-navbar, .rj-btn-navbar:focus {
-  height: 40px;
-  line-height: 40px;
-  margin: 11px 4px;
-  font-size: 16px;
-}
-
-.rj-btn-navbar:hover {
-  color: #eaeaea;
-  margin-top: 9px;
-  -webkit-box-shadow: 0 8px 0 #004DA7;
-  -moz-box-shadow: 0 8px 0 #004DA7;
-  box-shadow: 0 8px 0 #004DA7;
-}
-
-.rj-btn-navbar:active {
-  margin-top: 17px;
-  margin-bottom: -2px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
 }
 
 .rj-no-padding {
@@ -109,6 +83,7 @@ body {
 .rj-jumbo-main {
   font-family: "Montserrat";
   background-image: linear-gradient(-142deg, #FFF300 0%, #FFCC00 100%);
+  background: url("../img/bg-pattern.svg") no-repeat left center;
   padding-bottom: 0px;
   padding-top: 20px;
   margin-bottom: 0px;
@@ -118,38 +93,33 @@ body {
 .rj-jumbo-main h1 {
   font-family: "Montserrat";
   font-weight: 800;
-  font-size: 42px;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  color: #1a1a1a;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 16px;
+  color: #eaeaea;
 }
 
 .rj-jumbo-main p {
   font-family: "Montserrat";
-  font-size: 20px;
-  color: #3A3A3A;
+  font-size: 18px;
+  color: #A1A1A1;
   margin-bottom: 30px;
 }
 
 .rj-logo {
   text-align: center;
-  height: 50px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
 }
 
-.rj-jumbo-tel {
-  font-family: "Montserrat";
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 59px;
-}
-
-.rj-jumbo-contact-label {
-  font-size: 14px;
-  line-height: 59px;
-  margin-right: 20px;
+.nav-btn {
+  color:#eaeaea;
+  border: #979797 1px solid;
+  border-radius: 50px;
+  line-height: 15px!important;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .rj-jumbo-phone {

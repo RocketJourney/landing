@@ -16,290 +16,282 @@
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <!-- Start of Async Drift Code -->
-<script>
-!function() {
-  var t;
-  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-  t.factory = function(e) {
-    return function() {
-      var n;
-      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-    };
-  }, t.methods.forEach(function(e) {
-    t[e] = t.factory(e);
-  }), t.load = function(t) {
-    var e, n, o, i;
-    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-  });
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.config({
- locale: "en-US"
-});
-drift.load('arfbh9p6iyf5');
-</script>
-<!-- End of Async Drift Code -->
-</head>
-<body>
-  <!--[if lt IE 8]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+        return function() {
+          var n;
+          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e, n, o, i;
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+      });
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.config({
+      locale: "en-US"
+    });
+    drift.load('arfbh9p6iyf5');
+    </script>
+    <!-- End of Async Drift Code -->
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-  <div class="jumbotron rj-jumbo-main">
-    <div class="container">
-      <header class="wrapper clearfix">
-        <div class="rj-logo">
-          <img src="img/rj-logo.png"
-               srcset="img/rj-logo.png 1x,
-                       img/rj-logo@2x.png 2x"
-           alt="" />
-        </div>
-        <ul class="nav navbar-nav navbar-text navbar-right rj-jumbo-tel hidden-xs">
-          <li><span class="rj-jumbo-contact-label __nav-link"><span class="rj-demph"> Contact us at &ensp;+1</span>
-                                                                                      650<span class="rj-demph">-</span>600<span class="rj-demph">-</span>1477&ensp;
-                                                                                      <span class="rj-demph">or</span>&ensp;
-                                                                                      contact@rocketjourney.com
-                                                                                      </span>
-                                                                                    </li>
-                                                                                    <!-- <li><a href="https://rocketjourney.github.io/docs/" target="_blank"
-                                                                                      class="rj-jumbo-contact-label __nav-link __doc-link">
-                                                                                      See Documentation
-                                                                                    </a></li> -->
-        </ul>
-      </header>
-      <div class="row">
-        <div class="visible-md-block visible-lg-block col-md-4 rj-jumbo-phone text-right">
-          <img src="img/hero-phone.png"
-          srcset="img/hero-phone.png 1x,
-                  img/hero-phone@2x.png 2x"
-           alt="" />
-        </div>
-        <div class="col-md-8">
-          <div class="rj-jumbo-text">
-            <h1>Aumenta la retención de tu gym.</h1>
-            <p>RocketJourney is an app with a gameful design to help your Club build community and increase attendance. It's free!</p>
-            <p><button class="btn rj-btn-primary" role="button" data-toggle="modal" data-target="#signup-form">Register your Club</button></p>
+    <div class="jumbotron rj-jumbo-main">
+      <div class="container">
+        <header class="wrapper clearfix">
+          <div class="rj-logo">
+            <img src="img/rj-logo.png"
+            srcset="img/rj-logo.png 1x,
+            img/rj-logo@2x.png 2x"
+            alt="" />
           </div>
-          <div class="visible-xs-block visible-sm-block  col-md-4 rj-jumbo-phone text-right">
+          <ul class="nav navbar-nav navbar-text navbar-right hidden-xs">
+            <li><a href="https://control.center/login" target="_blank" class="nav-btn">Log In</a></li>
+          </ul>
+        </header>
+        <div class="row">
+          <div class="visible-md-block visible-lg-block col-md-4 rj-jumbo-phone text-right">
             <img src="img/hero-phone.png"
             srcset="img/hero-phone.png 1x,
-                    img/hero-phone@2x.png 2x"
-             alt="" />
+            img/hero-phone@2x.png 2x"
+            alt="" />
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="rj-testimonials">
-    <div class="container">
-      <div class="col-md-8 col-md-push-1 hidden-xs">
-        <div class="rj-testimonials-avatar" style="background-image: url('img/avatar.jpg')"></div>
-        <div class="rj-testimonials-text" style="border-right: 1px solid #2a2a2a; padding-right: 30px;">
-
-          <div class="rj-testimonials-quote" style="font-size:20px;">
-            "Loved the app! <span class="rj-demph">[…]</span> it makes me want to go to the gym.”
-          </div>
-          <div class="rj-testimonials-author">Andrea C.</div>
-      </div>
-      </div>
-      <div class="col-md-3">
-        <img class="img-responsive center-block"
-             src="img/ihrsa.png"
-             srcset="img/ihrsa.png 1x,
-                     img/ihrsa@2x.png 2x"
-             alt="" />
-      </div>
-    </div>
-  </section>
-
-  <section id="game" class="rj-slide rj-slide-odd">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-md-push-1 hidden-xs">
-          <img class="img-responsive center-block"
-               src="img/en-phone-journey.png"
-               srcset="img/en-phone-journey.png 1x,
-                       img/en-phone-journey@2x.png 2x"
+          <div class="col-md-8">
+            <div class="rj-jumbo-text">
+              <h1>Aumenta la retención de tu gym.<br>
+                Motiva a tus clientes a seguir asistiendo.</h1>
+                <p>RocketJourney es una app que motiva a tus clientes a seguir asistiendo al gym.</p>
+                <p><button class="btn rj-btn-primary" role="button" data-toggle="modal" data-target="#signup-form">Solicitar Información</button></p>
+              </div>
+              <div class="visible-xs-block visible-sm-block  col-md-4 rj-jumbo-phone text-right">
+                <img src="img/hero-phone.png"
+                srcset="img/hero-phone.png 1x,
+                img/hero-phone@2x.png 2x"
                 alt="" />
-        </div>
-        <div class="col-md-5 col-md-push-2 rj-slide-block">
-          <div class="rj-slide-text">
-            <h1>It's a game</h1>
-            <p>RocketJourney is a game of consistency. The <b>goal</b> is to sustain an exercise streak for as many weeks in a row as possible.</p>
-            <p class="rj-slide-subtext">Allow your members to automatically advance in the game just by checking in like they always do.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="teams" class="rj-slide rj-slide-pair">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-md-push-2 rj-slide-block">
-          <div class="rj-slide-text">
-            <h1>Let members play</h1>
-            <p>RocketJourney is more fun and engaging when played in teams.</p>
-            <p class="rj-slide-subtext">Let your members team up, compete, and motivate each other along their Journey.</p>
+      <section class="rj-testimonials">
+        <div class="container">
+          <div class="col-md-8 col-md-push-1 hidden-xs">
+            <div class="rj-testimonials-avatar" style="background-image: url('img/avatar.jpg')"></div>
+            <div class="rj-testimonials-text" style="border-right: 1px solid #2a2a2a; padding-right: 30px;">
+
+              <div class="rj-testimonials-quote" style="font-size:20px;">
+                "Loved the app! <span class="rj-demph">[…]</span> it makes me want to go to the gym.”
+              </div>
+              <div class="rj-testimonials-author">Andrea C.</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img class="img-responsive center-block"
+            src="img/ihrsa.png"
+            srcset="img/ihrsa.png 1x,
+            img/ihrsa@2x.png 2x"
+            alt="" />
           </div>
         </div>
-        <div class="col-md-3 col-md-push-3">
-          <img class="img-responsive center-block"
-               src="img/en-phone-team.png"
-               srcset="img/en-phone-team.png 1x,
-                       img/en-phone-team@2x.png 2x"
-                alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section id="brand" class="rj-slide rj-slide-odd">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-md-push-1 hidden-xs">
-          <img class="img-responsive center-block"
-               src="img/en-phone-brand.png"
-               srcset="img/en-phone-brand.png 1x,
-                       img/en-phone-brand@2x.png 2x"
-               alt="" />
+      <section id="game" class="rj-slide rj-slide-odd">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-md-push-1 hidden-xs">
+              <img class="img-responsive center-block"
+              src="img/en-phone-journey.png"
+              srcset="img/en-phone-journey.png 1x,
+              img/en-phone-journey@2x.png 2x"
+              alt="" />
+            </div>
+            <div class="col-md-5 col-md-push-2 rj-slide-block">
+              <div class="rj-slide-text">
+                <h1>It's a game</h1>
+                <p>RocketJourney is a game of consistency. The <b>goal</b> is to sustain an exercise streak for as many weeks in a row as possible.</p>
+                <p class="rj-slide-subtext">Allow your members to automatically advance in the game just by checking in like they always do.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-5 col-md-push-2 rj-slide-block">
-          <div class="rj-slide-text">
-            <h1>Show off your brand</h1>
-            <p>
-              RocketJourney is open to the world, so your members can team up with their friends, even if they exercise at home or outdoors.
-            </p>
+      </section>
 
-            <p class="rj-slide-subtext">
-              Allow all users to find your Club and solicit membership information through the app.
-            </p>
+      <section id="teams" class="rj-slide rj-slide-pair">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-md-push-2 rj-slide-block">
+              <div class="rj-slide-text">
+                <h1>Let members play</h1>
+                <p>RocketJourney is more fun and engaging when played in teams.</p>
+                <p class="rj-slide-subtext">Let your members team up, compete, and motivate each other along their Journey.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-3">
+              <img class="img-responsive center-block"
+              src="img/en-phone-team.png"
+              srcset="img/en-phone-team.png 1x,
+              img/en-phone-team@2x.png 2x"
+              alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="brand" class="rj-slide rj-slide-odd">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-md-push-1 hidden-xs">
+              <img class="img-responsive center-block"
+              src="img/en-phone-brand.png"
+              srcset="img/en-phone-brand.png 1x,
+              img/en-phone-brand@2x.png 2x"
+              alt="" />
+            </div>
+            <div class="col-md-5 col-md-push-2 rj-slide-block">
+              <div class="rj-slide-text">
+                <h1>Show off your brand</h1>
+                <p>
+                  RocketJourney is open to the world, so your members can team up with their friends, even if they exercise at home or outdoors.
+                </p>
+
+                <p class="rj-slide-subtext">
+                  Allow all users to find your Club and solicit membership information through the app.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rj-cta">
+        <div class="container">
+          <div class="row">
+            <h1>Register your Club. It's free!</h1>
+            <a class="btn rj-btn-primary" role="button" data-toggle="modal" data-target="#signup-form">Register your Club</a>
+          </div>
+        </div>
+      </section>
+
+
+      <footer class="container">
+        <div class="row">
+          <ul>
+            <li><span class="rj-copyright">© 2017 RocketJourney, Inc.</span></li>
+            <!-- <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms and Conditions</a></li> -->
+            <!-- <li><a href="https://rocketjourney.github.io/docs/" target="_blank">Documentation</a></li> -->
+            <li class="mixpanel"><a href="http://www.mixpanel.com" target="_blank"><img src="img/mixpanel.png" alt="" /></a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <!-- Modal Regular -->
+
+      <div class="modal fade" id="signup-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Register your Club</h4>
+            </div>
+            <div class="modal-body">
+              <form id="signup_form" name="signup" autocomplete="off" action="">
+                <div class="form-group">
+                  <label for="gym">Club Name</label>
+                  <input type="text" class="form-control" id="club_name_input" name="club_name" placeholder="Globo Gym">
+                </div>
+
+                <div class="form-group">
+                  <label for="first_name">Your first name</label>
+                  <input type="text" class="form-control" id="first_name_input" name="first_name" placeholder="John">
+                </div>
+
+                <div class="form-group">
+                  <label for="last_name">Your last name</label>
+                  <input type="text" class="form-control" id="last_name_input" name="last_name" placeholder="Globo">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your email</label>
+                  <input type="email" class="form-control" id="email_input" name="email" placeholder="john@globogym.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="name">Your role</label>
+                  <select class="" id="role_select"  name="role" placeholder="Select a role" required>
+                    <option value="none" disabled selected hidden>Select a role</option>
+                    <option value="owner">Owner</option>
+                    <option value="manager">Manager</option>
+                    <option value="staff">Sales / Front Desk</option>
+                    <option value="trainer">Trainer</option>
+                    <option value="member">Member</option>
+                  </select>
+                </div>
+
+                <div id="location_count" class="form-group" style="display:none;">
+                  <label for="name">No. of Locations</label>
+                  <input type="text" class="form-control" id="location_count_input" name="location_count" placeholder="#">
+                </div>
+
+                <div id="software_brand" class="form-group" style="display:none;">
+                  <label for="name">Club Software brand</label>
+                  <input type="text" class="form-control" id="software_brand_input" name="software_brand" placeholder="Custom, None, Mindbody, etc">
+                </div>
+                <div id="form-error-msg" class="form-error hidden">
+                  <p class="form-error-msg"><b>Error:</b> Please try again later.</p>
+                </div>
+                <button type="submit" class="btn rj-btn-primary" id="rj-send" role="button" style="width:100%;">Next</button>
+                <div id="loading-placeholder" class="spinner hidden"></div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="rj-cta">
-    <div class="container">
-      <div class="row">
-        <h1>Register your Club. It's free!</h1>
-        <a class="btn rj-btn-primary" role="button" data-toggle="modal" data-target="#signup-form">Register your Club</a>
-      </div>
-    </div>
-  </section>
+      <!-- Modal: Signup Success -->
 
-
-  <footer class="container">
-    <div class="row">
-      <ul>
-        <li><span class="rj-copyright">© 2017 RocketJourney, Inc.</span></li>
-        <!-- <li><a href="/privacy">Privacy Policy</a></li>
-        <li><a href="/terms">Terms and Conditions</a></li> -->
-        <!-- <li><a href="https://rocketjourney.github.io/docs/" target="_blank">Documentation</a></li> -->
-        <li class="mixpanel"><a href="http://www.mixpanel.com" target="_blank"><img src="img/mixpanel.png" alt="" /></a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- Modal Regular -->
-
-  <div class="modal fade" id="signup-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Register your Club</h4>
-        </div>
-        <div class="modal-body">
-          <form id="signup_form" name="signup" autocomplete="off" action="">
-            <div class="form-group">
-              <label for="gym">Club Name</label>
-              <input type="text" class="form-control" id="club_name_input" name="club_name" placeholder="Globo Gym">
+      <div class="modal fade" id="signup-form-success" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body m-success">
+              <h4 class="modal-title m-success" id="myModalLabel">Check your Email</h4>
+              <p>Click the verification button in the email we just sent you.</p>
             </div>
-
-            <div class="form-group">
-              <label for="first_name">Your first name</label>
-              <input type="text" class="form-control" id="first_name_input" name="first_name" placeholder="John">
-            </div>
-
-            <div class="form-group">
-              <label for="last_name">Your last name</label>
-              <input type="text" class="form-control" id="last_name_input" name="last_name" placeholder="Globo">
-            </div>
-
-            <div class="form-group">
-              <label for="email">Your email</label>
-              <input type="email" class="form-control" id="email_input" name="email" placeholder="john@globogym.com">
-            </div>
-
-            <div class="form-group">
-              <label for="name">Your role</label>
-              <select class="" id="role_select"  name="role" placeholder="Select a role" required>
-                <option value="none" disabled selected hidden>Select a role</option>
-                <option value="owner">Owner</option>
-                <option value="manager">Manager</option>
-                <option value="staff">Sales / Front Desk</option>
-                <option value="trainer">Trainer</option>
-                <option value="member">Member</option>
-              </select>
-            </div>
-
-            <div id="location_count" class="form-group" style="display:none;">
-              <label for="name">No. of Locations</label>
-              <input type="text" class="form-control" id="location_count_input" name="location_count" placeholder="#">
-            </div>
-
-            <div id="software_brand" class="form-group" style="display:none;">
-              <label for="name">Club Software brand</label>
-              <input type="text" class="form-control" id="software_brand_input" name="software_brand" placeholder="Custom, None, Mindbody, etc">
-            </div>
-            <div id="form-error-msg" class="form-error hidden">
-              <p class="form-error-msg"><b>Error:</b> Please try again later.</p>
-            </div>
-            <button type="submit" class="btn rj-btn-primary" id="rj-send" role="button" style="width:100%;">Next</button>
-            <div id="loading-placeholder" class="spinner hidden"></div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Modal: Signup Success -->
+      <!-- Modal: Member Message -->
 
-  <div class="modal fade" id="signup-form-success" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body m-success">
-          <h4 class="modal-title m-success" id="myModalLabel">Check your Email</h4>
-          <p>Click the verification button in the email we just sent you.</p>
+      <div class="modal fade" id="signup-form-member-msg" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body m-success">
+              <h4 class="modal-title m-success" id="myModalLabel">Thank You</h4>
+              <p>We’ll do our best to activate RocketJourney at your club.</p>
+              <p>If you’d like to help us speed things up, please reply to the email we just sent you :)</p>
+              <button type="button" class="btn btn-success alert-popup-button-success" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ok</span></button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Modal: Member Message -->
-
-  <div class="modal fade" id="signup-form-member-msg" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body m-success">
-          <h4 class="modal-title m-success" id="myModalLabel">Thank You</h4>
-          <p>We’ll do our best to activate RocketJourney at your club.</p>
-          <p>If you’d like to help us speed things up, please reply to the email we just sent you :)</p>
-          <button type="button" class="btn btn-success alert-popup-button-success" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ok</span></button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-</body>
-</html>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    </body>
+    </html>
