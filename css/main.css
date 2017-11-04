@@ -19,6 +19,10 @@ body {
   opacity: .5;
 }
 
+.make-yellow {
+  color:#ffcc00;
+}
+
 .rj-btn-primary {
   background-color: #ffcc00;
   color: #1a1a1a;
@@ -222,9 +226,17 @@ body {
 
 .rj-slide h1 {
   font-weight: 800;
-  font-size: 42.24px;
+  font-size: 32px;
   color: #eaeaea;
   text-shadow: 3px 3px 0px #161616;
+  text-align: center;
+}
+
+.rj-slide h2 {
+  font-size: 22px;
+  margin-top:0px;
+  font-weight: 100;
+  color: #aaa;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -241,23 +253,33 @@ body {
   color: #7a7a7a;
 }
 
-#faq {
-  padding: 50px;
+.rj-slide-with-phone {
+  padding-bottom: 0px;
 }
 
-#faq h1 {
-  font-weight: normal;
-  font-size: 32px;
-  color: #eaeaea;
-  text-shadow: 3px 3px 0px #161616;
+.rj-half-phone {
+  width:100%;
+  z-index: 999;
 }
 
-#faq p {
-  font-size: 20px;
-  color: #afafaf;
-  font-weight: 100;
-  margin-bottom: 70px;
+.rj-phone-journey {
+  padding: 0px;
+  margin-right: -30px;
+  margin-left: -30px;
 }
+
+.rj-photo-annotation {
+  background-color: #212121;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.rj-photo-annotation p {
+  font-size: 21px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 /* Call to Action */
 
 #rj-cta {
@@ -487,21 +509,11 @@ background: url("../img/icon-error-white.svg") no-repeat left center;
 
   /* Slides */
 
-  .rj-slide h1 {
-    text-align: left;
-  }
-
   /* Testimonials */
 
   .rj-testimonials-text {
     text-align: left;
     margin-left: 20px;
-  }
-
-  /* FAQ */
-
-  #faq p {
-    margin-bottom: 30px;
   }
 
   /* Footer */
