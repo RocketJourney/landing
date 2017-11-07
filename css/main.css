@@ -167,38 +167,7 @@ body {
   padding:0 4px;
 }
 
-/* Testimonials */
 
-.rj-testimonials {
-  background-color: #1a1a1a;
-  padding:30px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.rj-testimonials-avatar {
-  border-radius: 50%;
-  height: 56px;
-  width: 56px;
-  background-size: cover;
-  display: inline-block;
-}
-
-.rj-testimonials-text {
-  font-family: "Montserrat";
-  font-weight: 100;
-  display: inline-block;
-}
-
-.rj-testimonials-quote {
-  font-size: 22px;
-  color: #B3B3B3;
-}
-
-.rj-testimonials-author {
-  font-size: 16px;
-  color: #6a6a6a;
-}
 
 /* Slides */
 
