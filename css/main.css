@@ -283,6 +283,44 @@ body {
   font-size: 16px;
 }
 
+/* Your Data */
+#your-data {
+  background-color: #1a1a1a;
+}
+
+.flex-center {
+  display:flex;
+    flex-direction: column;
+}
+
+#your-data h1 {
+  font-size: 26px;
+}
+
+#your-data p {
+  font-size: 16px;
+  color:#9a9a9a;
+  text-align: center;
+}
+#your-data .text-wrapper {
+  padding:0 40px;
+}
+
+#your-data .your-data-legal {
+  margin-top: 30px;
+}
+
+#your-data .your-data-legal p {
+  font-size: 13px;
+  color:#6a6a6a;
+}
+
+#your-data .your-data-legal a {
+  font-weight: bold;
+  color:#6a6a6a;
+  text-decoration: underline;
+}
+
 /* Call to Action */
 
 #rj-cta {
