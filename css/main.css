@@ -276,6 +276,13 @@ body {
 
 }
 
+/* Teams */
+
+#teams p {
+  color:#9a9a9a;
+  font-size: 16px;
+}
+
 /* Call to Action */
 
 #rj-cta {
