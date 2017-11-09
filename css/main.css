@@ -400,6 +400,59 @@ body {
   color:#eaeaea;
 }
 
+/* User Comments */
+
+#user-comments h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #5a5a5a;
+  text-shadow: none;
+}
+
+.user-comment {
+  background-color: #212121;
+  border-radius: 10px;
+  padding:10px;
+  margin-bottom: 18px;
+}
+
+.user-comment--header {
+  color:#878787;
+  line-height: 20px;
+  padding: 2px 10px 10px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.user-comment--header > * {
+  vertical-align: middle;
+}
+
+.user-comment--mail-icon {
+  height:20px;
+  margin-right: 10px;
+}
+
+.user-comment--header-name {
+  color:#eaeaea;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-comment--header-date {
+  float:right;
+}
+
+.user-comment--content {
+  padding:10px;
+}
+
+.user-comment--content p {
+  color: #ABABAB;
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
 /* Call to Action */
 
 #rj-cta {
