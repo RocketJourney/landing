@@ -208,13 +208,6 @@ body {
   text-align: center;
 }
 
-.rj-slide p{
-  font-weight: 100;
-  font-size: 20px;
-  color: #D6D6D6;
-  margin-bottom: 20px;
-}
-
 .rj-slide .rj-slide-subtext {
   font-size: 16px;
   color: #7a7a7a;
@@ -233,14 +226,12 @@ body {
   padding: 0px;
 }
 
-.rj-photo-annotation {
-  border-radius: 20px;
+.phone--notes {
+    font-size: 16px;
 }
 
-.rj-photo-annotation p {
-  font-size: 19px;
-  margin-bottom: 0px;
-
+.phone--notes-left {
+    text-align: right;
 }
 
 /* Teams */
@@ -250,22 +241,33 @@ body {
   font-size: 16px;
 }
 
-.rj-phone-note p {
-  font-size: 18px;
-}
-
 .tag {
   font-weight: bold;
   font-size: 12px;
   padding: 3px 6px;
   border-radius: 6px;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
-.tag-soon {
+.tag-yellow {
   background-color: #ffcc00;
   color: #1a1a1a;
-  margin-bottom: 10px;
+}
+
+.tag-red {
+  background-color: #FF5252;
+  color: #1a1a1a;
+}
+
+.tag-cheatblue {
+  background-color: #50cafe;
+  color: #1a1a1a;
+}
+
+.tag-gray {
+  background-color: #3a3a3a;
+  color: #212121;
 }
 
 /* Your Data */
@@ -321,15 +323,15 @@ body {
 }
 
 .integration-method--left {
-  -webkit-box-shadow: 10px 10px 0 #5a5a5a;
-  -moz-box-shadow: 10px 10px 0 #5a5a5a;
-  box-shadow: 10px 10px 0 #5a5a5a;
+  -webkit-box-shadow: 10px 10px 0 #4a4a4a;
+  -moz-box-shadow: 10px 10px 0 #4a4a4a;
+  box-shadow: 10px 10px 0 #4a4a4a;
 }
 
 .integration-method--right{
-  -webkit-box-shadow: -10px 10px 0 #5a5a5a;
-  -moz-box-shadow: -10px 10px 0 #5a5a5a;
-  box-shadow: -10px 10px 0 #5a5a5a;
+  -webkit-box-shadow: -10px 10px 0 #4a4a4a;
+  -moz-box-shadow: -10px 10px 0 #4a4a4a;
+  box-shadow: -10px 10px 0 #4a4a4a;
 }
 
 .integration-method--icon {
@@ -405,7 +407,7 @@ body {
 #user-comments h1 {
   font-size: 24px;
   margin-bottom: 30px;
-  color: #5a5a5a;
+  color: #eaeaea;
   text-shadow: none;
 }
 
@@ -428,7 +430,7 @@ body {
 }
 
 .user-comment--mail-icon {
-  height:20px;
+  height:18px;
   margin-right: 10px;
 }
 
