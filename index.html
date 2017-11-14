@@ -44,6 +44,7 @@
         </div>
         <div class="col-md-8">
           <div class="rj-jumbo-text">
+            <h2 data-localize="greeting"></h2>
             <h1>Aumenta la retención de tu gym.<br>
               Motiva a tus clientes a seguir asistiendo.</h1>
               <p>RocketJourney es una app que motiva a tus clientes a seguir asistiendo al gym.</p>
@@ -453,6 +454,13 @@
           <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
           <script src="js/vendor/bootstrap.min.js"></script>
           <script src="js/main.js"></script>
+          <script src="js/localize/jquery.localize.min.js" type="text/javascript" charset="utf-8"></script>
           <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+          <script type="text/javascript">
+            $(function() {
+              var opts = { language: "en", pathPrefix: "js/localize/lang" };
+              $("[data-localize]").localize("lang", opts)
+            })
+          </script>
         </body>
         </html>
