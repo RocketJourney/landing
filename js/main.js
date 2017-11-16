@@ -1,34 +1,19 @@
 $(function() {
-  $('#role_select').change(function () {
-    var val = $(this).val();
-    if (val != "member") {
-      $('#location_count').show(200);
-      $('#software_brand').show(200);
-    } else {
-      $('#location_count').hide(200);
-      $('#software_brand').hide(200);
-    };
-  });
-
   $("form[name='signup']").validate({
 
     rules: {
       club_name: "required",
-      first_name: "required",
-      last_name: "required",
+      name: "required",
       email: {
         required: true,
         email: true
       },
-      role: "required"
     },
 
     messages: {
       club_name: "Please enter your Club's name",
-      first_name: "Please enter your first name",
-      last_name: "Please enter your last name",
+      name: "Please enter your name",
       email: "Please enter a valid email address",
-      role: "Please select your role"
     },
 
     submitHandler: function(form) {
@@ -71,7 +56,7 @@ var sendLeadForm = (club_name, first_name, last_name, email, role, location_coun
       }
     },
     success: function (data) {
-      console.log("success:", data);
+      // console.log("success:", data);
       $('body').css('overflow','hidden');
       $('#signup-form').modal('hide');
       $("#signup_form :input").prop("disabled", false);

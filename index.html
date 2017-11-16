@@ -377,13 +377,8 @@
                     </div>
 
                     <div class="form-group">
-                      <label for="first_name">Your first name</label>
-                      <input type="text" class="form-control" id="first_name_input" name="first_name" placeholder="John">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="last_name">Your last name</label>
-                      <input type="text" class="form-control" id="last_name_input" name="last_name" placeholder="Globo">
+                      <label for="name">Your Name</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="John Globo">
                     </div>
 
                     <div class="form-group">
@@ -391,27 +386,15 @@
                       <input type="email" class="form-control" id="email_input" name="email" placeholder="john@globogym.com">
                     </div>
 
-                    <div class="form-group">
-                      <label for="name">Your role</label>
-                      <select class="" id="role_select"  name="role" placeholder="Select a role" required>
-                        <option value="none" disabled selected hidden>Select a role</option>
-                        <option value="owner">Owner</option>
-                        <option value="manager">Manager</option>
-                        <option value="staff">Sales / Front Desk</option>
-                        <option value="trainer">Trainer</option>
-                        <option value="member">Member</option>
-                      </select>
-                    </div>
-
-                    <div id="location_count" class="form-group" style="display:none;">
+                    <!-- <div id="location_count" class="form-group" style="display:none;">
                       <label for="name">No. of Locations</label>
                       <input type="text" class="form-control" id="location_count_input" name="location_count" placeholder="#">
-                    </div>
+                    </div> -->
 
-                    <div id="software_brand" class="form-group" style="display:none;">
+                    <!-- <div id="software_brand" class="form-group" style="display:none;">
                       <label for="name">Club Software brand</label>
                       <input type="text" class="form-control" id="software_brand_input" name="software_brand" placeholder="Custom, None, Mindbody, etc">
-                    </div>
+                    </div> -->
                     <div id="form-error-msg" class="form-error hidden">
                       <p class="form-error-msg"><b>Error:</b> Please try again later.</p>
                     </div>
@@ -454,13 +437,6 @@
           <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
           <script src="js/vendor/bootstrap.min.js"></script>
           <script src="js/main.js"></script>
-          <script src="js/localize/jquery.localize.min.js" type="text/javascript" charset="utf-8"></script>
           <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-          <script type="text/javascript">
-            $(function() {
-              var opts = { language: "en", pathPrefix: "js/localize/lang" };
-              $("[data-localize]").localize("lang", opts)
-            })
-          </script>
         </body>
         </html>
