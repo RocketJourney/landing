@@ -23,6 +23,30 @@ body {
   color:#ffcc00;
 }
 
+.rj-btn-primary-blue {
+  background-color: #3073c1;
+  color: #e3f0ff;
+  height: 62px;
+  line-height: 62px;
+  margin: 4px 0;
+  -webkit-box-shadow: 0 4px 0 #004da7;
+  -moz-box-shadow: 0 4px 0 #004da7;
+  box-shadow: 0 4px 0 #004da7;
+  font-size: 22px;
+  border-radius: 100px;
+  font-weight: bold;
+  padding: 0 40px;
+}
+
+.rj-btn-primary-blue:hover, .rj-btn-primary-blue:focus {
+  color: #e3f0ff;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  -webkit-box-shadow: 0 10px 0 #004da7;
+  -moz-box-shadow: 0 10px 0 #004da7;
+  box-shadow: 0 10px 0 #004da7;
+}
+
 .rj-btn-primary {
   background-color: #ffcc00;
   color: #1a1a1a;
@@ -46,7 +70,7 @@ body {
   box-shadow: 0 10px 0 #B79717;
 }
 
-.rj-btn-primary:active {
+.rj-btn-primary:active, .rj-btn-primary-blue:active {
   margin-top: 10px;
   margin-bottom: -2px;
   -webkit-box-shadow: none;
@@ -54,7 +78,7 @@ body {
   box-shadow: none;
 }
 
-.rj-btn-primary:active, .rj-btn-primary:focus:active, .rj-btn-primary:focus {
+.rj-btn-primary:active, .rj-btn-primary:focus:active, .rj-btn-primary:focus, .rj-btn-primary-blue:active, .rj-btn-primary-blue:focus:active, .rj-btn-primary-blue:focus {
   outline:0;
   border:0;
 }
@@ -625,6 +649,16 @@ input.error {
 
 #signup_form._state-loading {
   opacity: 0.4;
+}
+
+.intl-tel-input {
+  width: 100%;
+}
+
+.optional-field {
+  color: #6b6b6b;
+  font-size: 12px;
+  text-align: left;
 }
 
 .spinner {

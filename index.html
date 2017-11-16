@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/intlTelInput.css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -386,6 +387,11 @@
                       <input type="email" class="form-control" id="email_input" name="email" placeholder="john@globogym.com">
                     </div>
 
+                    <div class="form-group">
+                      <label for="phone">Your Phone <span class="optional-field">Optional</span></label>
+                      <input id="phone" class="form-control" name="phone" type="tel">
+                    </div>
+
                     <!-- <div id="location_count" class="form-group" style="display:none;">
                       <label for="name">No. of Locations</label>
                       <input type="text" class="form-control" id="location_count_input" name="location_count" placeholder="#">
@@ -398,7 +404,7 @@
                     <div id="form-error-msg" class="form-error hidden">
                       <p class="form-error-msg"><b>Error:</b> Please try again later.</p>
                     </div>
-                    <button type="submit" class="btn rj-btn-primary" id="rj-send" role="button" style="width:100%;">Next</button>
+                    <button type="submit" class="btn rj-btn-primary-blue" id="rj-send" role="button" style="width:100%;">Next</button>
                     <div id="loading-placeholder" class="spinner hidden"></div>
                   </form>
                 </div>
@@ -437,6 +443,20 @@
           <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
           <script src="js/vendor/bootstrap.min.js"></script>
           <script src="js/main.js"></script>
+          <script src="js/intlTelInput.min.js" type="text/javascript"></script>
+          <script src="js/utils.js" type="text/javascript"></script>
           <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+          <script type="text/javascript">
+            $("#phone").intlTelInput({
+              initialCountry: "auto",
+              geoIpLookup: function(callback) {
+                $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+                  var countryCode = (resp && resp.country) ? resp.country : "";
+                  callback(countryCode);
+                });
+              },
+              utilsScript: "./js/utils.js" // just for formatting/placeholders etc
+            });
+          </script>
         </body>
         </html>

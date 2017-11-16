@@ -18,43 +18,49 @@ $(function() {
 
     submitHandler: function(form) {
       let club_name = $("#club_name_input").val();
-      let first_name = $("#first_name_input").val();
-      let last_name = $("#last_name_input").val();
+      let name = $("#name").val();
       let email = $("#email_input").val();
-      let role = $("#role_select").val();
-      let location_count = $("#location_count_input").val();
-      let software_brand = $("#software_brand_input").val();
+      var phone = $("#phone").intlTelInput("getNumber");
 
-      sendLeadForm(club_name, first_name, last_name, email, role, location_count, software_brand);
-
+      sendLeadForm(club_name, name, email, phone);
     }
   });
 });
 
-var sendLeadForm = (club_name, first_name, last_name, email, role, location_count, software_brand) => {
+function getLanguageCode() {
+  const language = (window.navigator.languages && window.navigator.languages[0]) ||
+        window.navigator.language ||
+        window.navigator.userLanguage;
+  return language.toLowerCase().split(/[_-]+/)[0];
+}
+
+var sendLeadForm = (club_name, name, email, phone) => {
   // Put loading state
   $("#signup_form :input").prop("disabled", true);
   $("#signup_form").addClass("_state-loading");
   $("#rj-send").addClass("hidden");
   $("#loading-placeholder").removeClass("hidden");
 
+  let data = {
+    "lead": {
+      "club_name": club_name, "name": name, "email": email, "browser_lang": getLanguageCode(),
+    }
+  };
+
+  if (phone.length > 0) {
+    var phoneData = $("#phone").intlTelInput("getSelectedCountryData");
+    data["phone"] = phone;
+    data["country"] = phoneData.iso2;
+    data["lada"] = phoneData.dialCode;
+  }
+
   // Make Request to API & render result states
 
   $.ajax({
     type: 'POST',
-    url: `https://rocket-api.com/api/v1/leads`,
+    url: `https://api.testin.space/api/v1/clubs/leads`,
     dataType: 'json',
-    data: {
-      "lead": {
-        "club_name": club_name,
-        "first_name": first_name,
-        "last_name": last_name,
-        "email": email,
-        "role": role,
-        "location_count": location_count,
-        "access_control": software_brand
-      }
-    },
+    data: data,
     success: function (data) {
       // console.log("success:", data);
       $('body').css('overflow','hidden');
