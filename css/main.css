@@ -23,6 +23,30 @@ body {
   color:#ffcc00;
 }
 
+.rj-btn-primary-blue {
+  background-color: #3073c1;
+  color: #e3f0ff;
+  height: 62px;
+  line-height: 62px;
+  margin: 4px 0;
+  -webkit-box-shadow: 0 4px 0 #004da7;
+  -moz-box-shadow: 0 4px 0 #004da7;
+  box-shadow: 0 4px 0 #004da7;
+  font-size: 22px;
+  border-radius: 100px;
+  font-weight: bold;
+  padding: 0 40px;
+}
+
+.rj-btn-primary-blue:hover, .rj-btn-primary-blue:focus {
+  color: #e3f0ff;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  -webkit-box-shadow: 0 10px 0 #004da7;
+  -moz-box-shadow: 0 10px 0 #004da7;
+  box-shadow: 0 10px 0 #004da7;
+}
+
 .rj-btn-primary {
   background-color: #ffcc00;
   color: #1a1a1a;
@@ -46,7 +70,7 @@ body {
   box-shadow: 0 10px 0 #B79717;
 }
 
-.rj-btn-primary:active {
+.rj-btn-primary:active, .rj-btn-primary-blue:active {
   margin-top: 10px;
   margin-bottom: -2px;
   -webkit-box-shadow: none;
@@ -54,7 +78,7 @@ body {
   box-shadow: none;
 }
 
-.rj-btn-primary:active, .rj-btn-primary:focus:active, .rj-btn-primary:focus {
+.rj-btn-primary:active, .rj-btn-primary:focus:active, .rj-btn-primary:focus, .rj-btn-primary-blue:active, .rj-btn-primary-blue:focus:active, .rj-btn-primary-blue:focus {
   outline:0;
   border:0;
 }
@@ -533,6 +557,18 @@ body.modal-open {
   color: #BBBBBB;
 }
 
+.m-success a {
+  color: #bbbbbb;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m-success a:hover {
+  text-decoration: underline;
+}
+
 .modal-header {
   color: #afafaf;
   font-size: 16px;
@@ -627,6 +663,32 @@ input.error {
   opacity: 0.4;
 }
 
+#signup_form_extra._state-loading {
+  opacity: 0.4;
+}
+
+.modal-description {
+  color: #afafaf;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.modal-description > span {
+  font-weight: bold;
+}
+
+.intl-tel-input {
+  width: 100%;
+}
+
+.optional-field {
+  color: #6b6b6b;
+  font-size: 12px;
+  text-align: left;
+}
+
 .spinner {
   height: 56px;
   line-height: 56px;
@@ -648,7 +710,7 @@ input.error {
   padding-left: 12px;
 }
 
-.form-error-msg {
+.form-error-msg, .form-error-msg-extra {
 color:#fff;
 font-size: 14px;
 padding-left: 36px;
