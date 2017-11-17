@@ -557,6 +557,18 @@ body.modal-open {
   color: #BBBBBB;
 }
 
+.m-success a {
+  color: #bbbbbb;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m-success a:hover {
+  text-decoration: underline;
+}
+
 .modal-header {
   color: #afafaf;
   font-size: 16px;
@@ -651,6 +663,22 @@ input.error {
   opacity: 0.4;
 }
 
+#signup_form_extra._state-loading {
+  opacity: 0.4;
+}
+
+.modal-description {
+  color: #afafaf;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.modal-description > span {
+  font-weight: bold;
+}
+
 .intl-tel-input {
   width: 100%;
 }
@@ -682,7 +710,7 @@ input.error {
   padding-left: 12px;
 }
 
-.form-error-msg {
+.form-error-msg, .form-error-msg-extra {
 color:#fff;
 font-size: 14px;
 padding-left: 36px;

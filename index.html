@@ -412,14 +412,92 @@
             </div>
           </div>
 
+          <!-- Extra gym data -->
+
+          <!-- Modal Regular -->
+
+          <div class="modal fade" id="extra-signup-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Cuéntanos más...</h4>
+                </div>
+                <div class="modal-body">
+                  <p class="modal-description">
+                    <span>Tu request ha sido enviado. Cuéntanos más de tu gimnasio</span>, le damos prioridad a los que llenan estos datos:
+                  </p>
+                  <form id="signup_form_extra" name="signup-extra" autocomplete="off" action="">
+                    <div class="form-group">
+                      <label for="website">Website o Facebook Page</label>
+                      <input
+                        id="website"
+                        class="form-control"
+                        name="website"
+                        placeholder="www.globo.com"
+                        type="text"
+                      >
+                    </div>
+
+                    <div class="form-group">
+                      <label for="software_brand">CRM/Software</label>
+                      <input
+                        class="form-control"
+                        id="software_brand"
+                        name="software_brand"
+                        placeholder="Software Brand"
+                        type="text"
+                      >
+                    </div>
+
+                    <div class="form-group">
+                      <label for="location_count">Location Count</label>
+                      <input
+                        class="form-control"
+                        id="location_count"
+                        name="location_count"
+                        placeholder="#"
+                        type="text"
+                      >
+                    </div>
+
+                    <div id="form-error-msg-extra" class="form-error hidden">
+                      <p class="form-error-msg"><b>Error:</b> Please try again later.</p>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn rj-btn-primary-blue"
+                      id="rj-send-extra"
+                      role="button"
+                      style="width:100%;"
+                    >
+                      Enviar
+                    </button>
+                    <div id="loading-placeholder-extra" class="spinner hidden"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Modal: Signup Success -->
 
           <div class="modal fade" id="signup-form-success" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-body m-success">
-                  <h4 class="modal-title m-success" id="myModalLabel">Check your Email</h4>
-                  <p>Click the verification button in the email we just sent you.</p>
+                  <h4 class="modal-title m-success" id="myModalLabel">¡Gracias!</h4>
+                  <p>Pronto un representate de RocketJourney te contactará al correo/teléfono proporcionado.</p>
+                  <p>Si quieres apurar las cosas, envianos un correo a:</p>
+                  <a href="mailto:sales@rocketjourney.com">sales@rocketjourney.com</a>
+                  <button type="button" class="btn btn-success alert-popup-button-success" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ok</span></button>
                 </div>
               </div>
             </div>
