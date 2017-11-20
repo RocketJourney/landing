@@ -121,8 +121,8 @@ body {
 .rj-jumbo-main h1 {
   font-family: "Montserrat";
   font-weight: 800;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 38px;
   margin-bottom: 16px;
   color: #eaeaea;
 }
@@ -727,6 +727,14 @@ background: url("../img/icon-error-white.svg") no-repeat left center;
   height:50px;
   margin-top: 20px;
 }
+
+@media (min-width:1200px) {
+  .rj-jumbo-main p {
+    padding-right: 100px;
+  }
+
+}
+
 
 @media (min-width:768px) {
 
