@@ -878,7 +878,7 @@ input.error {
 
   /* Modal */
 
-  .modal-dialog {
+  .signup-modal.modal-dialog {
     width: 350px;
   }
 }
@@ -969,13 +969,62 @@ input.error {
 
 
 
+/*  Terms Modal  */
 
+#terms-summary .modal-body {
+    padding: 32px 32px;
+}
 
+#terms-summary h3 {
+  margin-top:0px;
+  font-size: 20px;
+  font-weight: bold;
+}
 
+#terms-summary p {
+  color:#6a6a6a;
+  margin-bottom: 20px;
+}
 
+#terms-summary .close {
+  margin-left: 20px;
+  color:#aaa;
+}
 
+#terms-summary .modal-content {
+    background-color: #eaeaea;
+    color: #1a1a1a;
+}
 
+#terms-summary ol {
+  padding-left: 20px;
+}
 
+#terms-summary ol > li {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#terms-summary ul {
+    padding-left: 20px;
+}
+
+.second-nesting {
+  margin-bottom: 10px;
+}
+
+#terms-summary .secondary-info {
+  color:#6a6a6a;
+  font-size: 12px;
+  font-weight: normal;
+  padding-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  #terms-summary h3 {
+    line-height: 36px;
+  }
+}
 
 /*  FIXERS  */
 
