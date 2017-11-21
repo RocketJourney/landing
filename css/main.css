@@ -237,10 +237,6 @@ body {
   color: #7a7a7a;
 }
 
-.rj-slide-with-phone {
-  padding-bottom: 0px;
-}
-
 .rj-half-phone {
   width:100%;
   z-index: 999;
@@ -256,6 +252,30 @@ body {
 
 .phone--notes-left {
   text-align: right;
+}
+
+@media only screen and (min-width: 992px) {
+  .alone {
+    margin-bottom: 40px;
+    padding: 0 180px;
+  }
+}
+
+@media only screen and (max-width: 767px)  {
+  .rj-slide h1 {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .rj-slide {
+    padding: 50px 20px;
+  }
+  .rj-slide h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 22px;
+    text-align: left;
+  }
 }
 
 /* Teams */
@@ -292,6 +312,40 @@ body {
 .tag-gray {
   background-color: #3a3a3a;
   color: #212121;
+}
+
+@media only screen and (min-width: 992px)  {
+
+  .note-1 {
+    margin-top:240px; text-align:right;
+  }
+
+  .note-2 {
+    margin-top:216px;
+  }
+
+  .rule-1 {
+    margin-top:120px;
+  }
+
+  .rule-2-2 {
+    margin-top:220px;
+  }
+
+  .rule-3 {
+    margin-top:140px;
+  }
+}
+
+@media only screen and (max-width: 767px)  {
+  .rj-rule {
+    text-align:left;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .note-1 {
+    margin-bottom: 40px;
+  }
 }
 
 /* Your Data */
@@ -336,6 +390,25 @@ body {
 
 #your-data .your-data-legal a:hover {
   color:#eaeaea;
+}
+
+@media only screen and (max-width: 767px)  {
+  #your-data .text-wrapper {
+    padding:0 10px;
+  }
+
+  #your-data h1 {
+    font-size: 20px;
+  }
+
+  #your-data p {
+    text-align: left;
+  }
+
+  .integration-method--left {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
 }
 
 /* Integration Methods */
@@ -478,6 +551,13 @@ body {
   margin-bottom: 0px;
   font-size: 18px;
   line-height: 23px;
+}
+
+@media only screen and (max-width: 767px) {
+  .user-comment--content p {
+    font-size: 16px;
+    line-height: 23px;
+  }
 }
 
 /* Call to Action */
@@ -884,4 +964,27 @@ input.error {
 .rj-testimonials-author {
   font-size: 16px;
   color: #6a6a6a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FIXERS  */
+
+.rj-slide-with-phone {
+  padding-bottom: 0px;
+}
+
+@media only screen and (min-width: 992px)  {
+  .forty-desk-pusher {
+    margin-bottom: 40px
+  }
 }
